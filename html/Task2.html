@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Day 2</title>
+    <style>
+        table{
+            border:3px solid black;
+            width:90%;
+            border-collapse:collapse;
+
+        }
+        th,td{
+            border:1px solid black;
+            padding:15px;
+            border-collapse:collapse;
+    
+        }
+        div{
+            border:1px solid black;
+            width:75%;
+            padding:10px;
+            text-align:justify;
+        }
+    </style>
+    
+</head>
+
+
+
+<body style="border-spacing: 5px;">
+    
+    <div>
+    <h1>Task 1 Table</h1>
+    <h2><a href="#abc">click here</a></h2>
+    <table>
+        <thead>
+            <tr>
+                <th rowspan="2">Topic</th>
+                <th colspan="2">Description</th>
+            </tr>
+            <tr>
+                <th>Definition</th>
+                <th>Example/Note</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Table in HTML</td>
+                <td> Used to display data in rows abd coloumns</td>
+                <td>&lt;table&gt; &lt;tr&gt; &lt;td&gt;...&lt;/td&gt; &lt;/tr&gt; &lt;table&gt;</td>
+            </tr>
+            <tr>
+                <td>Form in HTML</td>
+                <td>Collect user input and submit into server</td>
+                <td>&lt;form&gt; &lt;input&gt; &lt;/form&gt;</td> 
+            </tr>
+            <tr>
+                <td rowspan="2">Div Tag</td>
+                <td rowspan="2">A block level container for grouping elements</td>
+                <td>&lt;div&gt;content&lt;/div&gt;</td>
+            </tr>
+            <tr>
+                <td>Often used with class or id for styling and scripting</td>
+            </tr>
+            <tr>
+                <td>Id and class attribute</td>
+                <td>Used to uniquely identify or group HTML elements for styling and Scripting</td>
+                <td>&lt;div id="main" class="container"&gt; &lt;/div&gt;</td>
+            </tr>
+            <tr>
+                <td>Style Tag</td>
+                <td>Defines internal css with an HTML doccument</td>
+                <td>&lt;style&gt; h1{color : red;} &lt;/style&gt;</td>
+            </tr>
+            <tr>
+                <td>Video & Audio Tag</td>
+                <td>Embeds Video and audio files ina webpage </td>
+                <td>&lt;video src="movie.mp4" controls&gt;&lt;/video&gt;<br>
+                &lt;audio src="song.mp3" controls&gt;&lt;/audio&gt;</td>
+            </tr>
+            <tr>
+                <td>What is meta tag</td>
+                <td>provides meta data about the HTML document (e.g., charset,auther,viewpoint).</td>
+                <td>&lt;meta charset="UTF-8"&gt;</td>
+            </tr>
+            <tr>
+                <td rowspan="2">Semantic and  non semantic elements</td>
+                <td>Sematic: Clearly discribes its meaning(e.g., &lt;header&gt;,&lt;footer&gt;</td>
+                <td rowspan="2">Semantic :&lt;nav&gt;,&lt;main&gt;,&lt;article&gt;<br>
+                Non semantic :&lt;div&gt;,&lt;span&gt;</td>
+            </tr>
+            <tr>
+                <td>Non semantic: Does not Discribe its meaning(e.g.,&lt;div&gt;,&lt;span&gt;)</td>
+            </tr>
+            </tbody>
+           <tfoot>
+                <tr>
+                    <td rowspan="2">Inline and block elements</td>
+                    <td>Block: Starts on a new line,takes full width (e.g.,&lt;div&gt;,&lt;p&gt;)</td>
+                    <td rowspan="2">Block :&lt;h1&gt;,&lt;div&gt;,&lt;p&gt;<br>
+                Non semantic :&lt;a&gt;,&lt;span&gt;,&lt;img&gt;</td></td>
+                </tr>
+                <tr>
+                    <td>Inline:Does not start on a new line ,only takes up much width as necesssary(e.g.,&lt;span&gt;,&lt;a&gt;) </td>
+                </tr>
+           </tfoot>
+        
+    </table>
+    <br>
+    </div><br><br>
+    <div>
+        <h1>Task 2 Form</h1>
+        <form>
+            <h2>Registration Form</h2>
+            <label >Name</label>
+            <input type="text" placeholder="Enter your name"><br><br>
+            <label>Email</label>
+            <input type="email" placeholder="Enter your email"><br><br>
+            <label>Password</label>
+            <input type="password" placeholder="Enter your passwotrd"><br><br>
+            <label>Gender</label>
+            <input type="radio" name="gender" value="Male">
+            <label>Male</label>
+            <input type="radio" name="gender" value="Female">
+            <label>Female</label><br><br>
+            <label id="abc">Doccuments</label>
+            <input type="file"><br><br>
+            <input type="submit" value="Register">
+            
+            
+        </form>
+    </div>
+    
+</body>
+
+</html>

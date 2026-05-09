@@ -1,0 +1,398 @@
+html{
+    scroll-behavior: smooth;
+}
+body {
+  background-color:#f4f4f4; /* Off-white base */
+  background-image: 
+    linear-gradient(#e5e5e5 1px, transparent 1px),
+    linear-gradient(90deg, #e5e5e5 1px, transparent 1px);
+  background-size: 40px 40px; /* Adjust for grid density */
+  letter-spacing: 0.02em ;
+}
+.nav-container {
+    background-color:#f4f4f4;
+    padding: 10px;
+    position:fixed;
+    top:0;
+    width:100%;
+    border-bottom: 2px solid #555;
+    display:flex;
+    justify-content: space-between;
+    margin:0px 0px;
+    z-index: 10000;
+    cursor: url('C:\\Users\\ASHIK\\Desktop\\BRIDGEON\\Foundation\\portfolio\\icons8-select-cursor-24.png'),auto;
+}
+#nav-name{
+    display:flex;
+    align-items:center;
+    justify-content:flex-start;
+    color:black;
+   
+}
+#nav-center{
+    display:flex;
+    align-items:center;
+    justify-content: space-around;;
+    gap:30px;
+   
+}
+#nav-center a{
+    text-decoration: none;
+    color:black;
+
+}
+#nav-right{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    right:10px;
+    padding-right:40px;
+
+}
+#nav-right a{
+    text-decoration: none;
+    color:black;
+    background-color:black;
+    padding: 5px 10px;
+    border:2px solid black;
+    border-radius: 5px;
+    background-color:transparent;
+    transition: all 0.3 linear;
+
+
+}
+#nav-right a:hover{
+    transform: scale(1.1);
+    background-color:black;
+    color:white;
+}
+
+#nav-center a:hover{
+    color:black;
+    padding:10px;
+    border-radius: 16px;
+    border-color:#787777;
+    box-shadow: 0 0 15px #787777;
+    text-shadow: 0 0 5px #787777;
+    transition: all 0.5s ease;
+    
+}
+#nav-name h2:hover{
+    color:green;
+    padding:10px;
+    text-shadow: 0 0 15px #5A8DBE;
+    border: 1px solid black;
+    transform: scale(1.1);
+}
+#home{
+    height:800px;
+    width:100%;
+    border-bottom: 10px solid black;
+    margin-top:100px;
+    position:relative;
+    cursor: url('C:\\Users\\ASHIK\\Desktop\\BRIDGEON\\Foundation\\portfolio\\icons8-select-cursor-24.png'),auto;
+}
+#tech{
+    width:50%;
+    
+    border-radius: 16px;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+    position:absolute;
+    left:10px;
+    
+}
+#image-container{
+    width: 50%;
+    position:relative;
+    left:700px;
+    
+
+    
+}
+
+    
+.blue-card {
+    position: absolute;
+    width: 390px;
+    height: 390px;
+    top: 180px;
+    left: 200px;
+    transform: translate(-50%, -40%) rotate(-6deg);
+    border-radius: 34% 66% 48% 52% / 42% 38% 62% 58%;
+    background-color: #0eaef8;
+    box-shadow: 0 24px 36px rgba(14, 174, 248, 0.35);
+    animation: blue 2s linear 0s infinite forwards;
+    z-index: 0;
+    overflow:hidden;
+    }
+@keyframes blue {
+    0%{
+                    transform: translateY(50px);
+                }
+                50%{
+                    transform: translateY(-50px);
+                }
+                 100%{
+                    transform: translateY(0);
+                }
+}
+
+.profile-img {
+    position: absolute;
+    
+    left:30px;
+    width: 390px;
+    height: 390px;
+    object-fit: cover;
+    border-bottom-left-radius: 70px;
+    border-bottom-right-radius: 50px;
+    z-index: 2;
+    transition: transform 0.45s ease, box-shadow 0.45s ease;
+    
+    }
+.profile-img:hover{
+    transform:translateY(-50px) ;
+    
+
+}
+
+
+#about{
+    height:800px;
+    width:100%;
+    background-color:#f9f9f7;
+    border-bottom: 5px solid BLACK;
+    cursor: url('C:\\Users\\ASHIK\\Desktop\\BRIDGEON\\Foundation\\portfolio\\icons8-select-cursor-24.png'),auto;
+}
+#project{
+    height:800px;
+    width:100%;
+    border-bottom: 5px solid BLACK; 
+    cursor: url('C:\\Users\\ASHIK\\Desktop\\BRIDGEON\\Foundation\\portfolio\\icons8-select-cursor-24.png'),auto;   
+}
+#experience{
+    height:1000px;
+    width:100%;
+    background-color:#f9f9f7;
+    border-bottom: 5px solid BLACK;
+    cursor: url('C:\\Users\\ASHIK\\Desktop\\BRIDGEON\\Foundation\\portfolio\\icons8-select-cursor-24.png'),auto;
+    
+}
+
+
+div.about-heading{
+    position:relative;
+    top:75px;
+    
+}
+.about-head1{
+    font-family: "inter", sans-serif;
+    font-weight: 600;
+    font-size: 3rem;
+    
+}
+.about-discrption{
+    width:45%;
+    height:700px;
+    
+    position:absolute;
+    left:0;
+    padding:5px;
+}
+.about-skillset{
+    width:48%;
+    height:600px;
+    position:absolute;
+    left:50%;
+    padding:5px;
+}
+div.skill-flex{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-left:10px;
+    gap:10px;
+}
+.skill-flex > p {
+    border:1px solid #d4d4d4;
+    color:#1a1a1a;
+    background-color: #e5e5e5;
+    padding:5px;
+    font-size: small;
+
+}
+#skill > p {
+    color:grey;
+}
+div.project-head{
+    position:relative;
+
+}
+#project-lang {
+      width:30% ;
+      height:50px;
+      display:flex;
+      flex-direction: row;
+      align-items: bottom;
+      justify-content:space-around ;
+      gap:10px;
+      padding: 5px;
+      flex-wrap: wrap;
+}
+#project-lang > p{
+   border:1px solid #d4d4d4;
+    color:#1a1a1a;
+    background-color: #e5e5e5;
+    height:auto;
+    padding:5px;    
+}
+#exp-left{
+    width:30%;
+    height:800px;
+
+    position:absolute;
+    top:150px;
+    left:5%;
+    padding:5px;
+}
+#exp-right{
+    width:55%;
+    height:800px;
+    position:absolute;
+    top:150px;
+    left:40%;
+    padding:5px;
+}
+#exp-right-head{
+    font-family: 'Monument Extended', sans-serif ;
+    font-weight: 900;
+    line-height: 1.1;
+}
+#contact{
+    height:500px;
+    width:100%;
+    cursor: url('C:\\Users\\ASHIK\\Desktop\\BRIDGEON\\Foundation\\portfolio\\icons8-select-cursor-24.png'),auto;
+
+}
+.contact-details{
+    position:relative;
+    top:250px;
+    height:200px;
+    width:100%;
+    background-color:black ;
+    border-radius: 10px;
+}
+.icon-container{
+    position:relative;
+    padding:10px ;
+    display: flex;
+    justify-content:space-between;
+    align-content: center;
+}
+div.contact-icons-alignment{
+    width:20%;
+    height:180px;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content:center;
+}
+
+.bi-telephone{
+    font-size: 20px;
+    color:azure; 
+    font-size: 50px;
+    transition: all 0.6 ease-in-out;
+}
+#phone:hover{
+    border:2px solid #FF3131;
+    border-radius:16px;
+    box-shadow: 0 0 30px #FF3131,
+                0 0 20px  #FF3131;
+               
+    text-shadow:0 0 8px #FF3131;
+    border-radius: 10px;
+    color:#FF3131;
+    
+    
+}
+.bi-telephone:hover{
+    
+    text-shadow:0 0 8px #FF3131;
+    border-radius: 10px;
+    color:#FF3131;
+    padding:10px;
+}
+#email:hover{
+    border:2px solid #ffb300;
+    border-radius:16px;
+    box-shadow: 0 0 30px #ffb300,
+                0 0 20px  #ffb300;
+               
+    text-shadow:0 0 8px#ffb300;
+    border-radius: 10px;
+    color:#ffb300;
+}
+.bi-envelope{
+    font-size: 20px;
+    color:azure;
+    font-size: 50px;
+    transition: all 0.6 ease-in-out;
+}
+.bi-envelope:hover{
+    
+    text-shadow:0 0 8px #FFB300;
+    border-radius: 10px;
+    color:#FFB300;
+    padding:10px 10px 50px 10px;
+}
+
+.bi-linkedin{
+    font-size: 20px;
+    color:azure;
+    font-size: 50px;
+    transition: all 0.6 ease-in-out;
+}
+#linked-in:hover{
+    border:2px solid #00f3ff;
+    border-radius:16px;
+    box-shadow: 0 0 30px #00f3ff,
+                0 0 20px  #00f3ff;
+               
+    text-shadow:0 0 8px#00f3ff;
+    border-radius: 10px;
+    color:#00f3ff;
+}
+.bi-linkedin:hover{
+   
+    text-shadow:0 0 8px #00f3ff;
+    border-radius: 10px;
+    color:#00f3ff;
+    padding:10px 10px 50px 10px;
+}
+.bi-github{
+     font-size: 20px;
+     color:azure;
+     font-size: 50px;
+     transition: all 0.6 ease-in-out;
+}
+#git:hover{
+    border:2px solid #B026FF;
+    border-radius:16px;
+    box-shadow: 0 0 30px #B026FF,
+                0 0 20px  #B026FF;
+               
+    text-shadow:0 0 8px#B026FF;
+    border-radius: 10px;
+    color:#B026FF;
+}
+.bi-github:hover{
+   
+    text-shadow:0 0 8px #B026FF;
+    border-radius: 10px;
+    color:#B026FF;
+    padding:10px 10px 50px 10px;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style>
+            .container{
+                display:grid;
+                grid-template-columns:200px auto;
+                grid-template-rows: 60px  100px 60px;
+                gap:10px;
+                padding:10px;
+                
+                
+            }
+            div.header{
+                background-color:darkorange;
+                grid-column:1/span 2;
+                transition:all 3s ease-out 2s;
+            }
+             div.header:hover{
+                background-color:orange;
+                padding:20px;
+            }
+            div.sidebar{
+                background-color:darkseagreen;
+            }
+            div.main-content{
+                background-color:darkorchid;
+            }
+            div.footer{
+                background-color:darkgrey;
+                grid-column:1/span 2;
+            }
+        </style>
+
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">Header</div>
+            <div class="sidebar">Side bar</div>
+            <div class="main-content">Main content</div>
+            <div class="footer">Footer</div>
+        </div>
+    </body>
+</html>

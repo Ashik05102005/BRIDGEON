@@ -1,0 +1,47 @@
+div.form{
+    border:1px solid black;
+    margin:20px;
+    padding-left: 25px;
+    width:350px;
+    height:600px;
+    background-color: blueviolet;
+    border-radius: 16px;
+    color:antiquewhite;
+    position:absolute;
+    top: 75px;
+    left: 20px;
+    right: 15px;
+    bottom: 60px;
+    
+}
+div.main{
+position: relative;
+}
+div.head{
+    border:1px solid black;
+    border-radius:16px;
+    position:absolute;
+    top: 75px;
+    left: 500px;
+    right: 15px;
+    bottom: 60px;
+    width:350;
+    height:6000px;
+    background-color:darkblue;
+    color: azure;
+    padding-left: 25px;
+    margin: 20px;
+
+    
+
+
+}
+div.header{
+
+    position:sticky;
+    top:0;
+    left:50%;
+    transform: translateX();
+    z-index: 1;
+}
+

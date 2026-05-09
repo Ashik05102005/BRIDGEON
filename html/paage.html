@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Webpage</title>
+        <style>
+            body{
+                background-image:url('a316af00-a5eb-4592-9ac9-609275ce083a.jpg');
+                background-size:cover;
+            }
+            .container{
+                display:flex;
+                flex-direction:column;
+                justify-content:space-around;
+                background-image:url('a316af00-a5eb-4592-9ac9-609275ce083a.jpg');
+                background-size:cover;
+                position:sticky;
+                height:0px;
+
+                
+            }
+
+            .nav-bar{
+                display:flex;
+                justify-content:flex-end;
+                gap:20px;
+                background-color:rgba(255,255,255,0.4);
+                padding:20px;
+                height:50px;
+                position:absolute;
+                top:0;
+                left:5px;
+                width:95%;
+                opacity:1 !important;
+                
+            }
+            .nav-bar a{
+                color:rgb(7, 7, 7) ;
+                 opacity:1 !important;
+                font-size:18px;
+                padding:10px 20px;
+            }
+            .nav-bar a:hover{
+                background-color:antiquewhite;
+                border-radius:5px;
+                transition:0.3s;
+                transform:scale(1.1);
+                text-shadow:2px 2px 5px rgb(255, 49, 49);
+                text-align:center;
+                opacity:1 !important;
+            }
+            .nav-bar h1{
+                color:cyan;
+                font-size:25px;
+                margin-right:auto;
+                position:relative;
+            }
+            .nav-bar h1:hover{
+                color:cyan;
+                font-size:30px;
+                transition:0.3s;
+                text-shadow:2px 2px 5px black;
+                text-transform:uppercase;
+                transform:scale(1.1);
+
+            }
+             p{
+                color:trueblue !important;
+            }
+            input:focus{
+                outline:red solid 2px !important;
+            }
+            .form-container{
+                width:350px;
+                height:400px;
+                display:grid;
+                margin:100px auto;
+                border-radius:10px;
+                background-color:rgba(225,225,225,0.15);
+                padding:25px 25px 10px;
+            }
+            .form-container input[type="text"],.form-container input[type="password"]{
+                padding:10px;
+                margin:10px 0;
+                border-radius:5px;
+                border:none;
+                background-color:rgba(255,255,255,0.8);
+            }
+
+
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1 style="float:left; align-items: left !important;">Day 1</h1>
+           
+        <nav class="nav-bar">
+            
+            <a href="day2.html">Day 2</a>
+            <a href="day3.html">Day 3</a>
+            <a href="day4.html">Day 4</a>
+            <a href="task3.html">Task 3</a>
+        </nav>
+        </div>
+        <div>
+            <form class="form-container">
+                <h1>
+                    login
+                </h1>
+                <input type="text" placeholder="username"><br>
+                <input type="password" placeholder="password"><br>
+                <input type="search" placeholder="search"><br>
+            </form>
+        </div>
+        
+    </body>
+</html>

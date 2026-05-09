@@ -1,0 +1,23 @@
+h1{
+    color:mediumvioletred;
+    background-color:antiquewhite;
+    border:2px solid black;
+    border-color:mediumvioletred;
+    
+}
+button{
+    background-color:aqua;
+    color:cornsilk;
+    border:2px solid black;
+    border-color:mediumvioletred;
+}
+div{
+    
+    background-size:cover;
+    BORDER:2px solid black;
+}
+.bdy{
+    background-image:url(backiee-96330.jpg);
+    background-size:cover;
+
+}
