@@ -87,7 +87,7 @@ body {
 #home{
     height:800px;
     width:100%;
-    border-bottom: 10px solid black;
+    border-bottom: 5px solid black;
     margin-top:100px;
     position:relative;
     cursor: url('C:\\Users\\ASHIK\\Desktop\\BRIDGEON\\Foundation\\portfolio\\icons8-select-cursor-24.png'),auto;
@@ -124,7 +124,7 @@ body {
     border-radius: 34% 66% 48% 52% / 42% 38% 62% 58%;
     background-color: #0eaef8;
     box-shadow: 0 24px 36px rgba(14, 174, 248, 0.35);
-    animation: blue 2s linear 0s infinite forwards;
+    animation: blue 5s ease 1s infinite forwards;
     z-index: 0;
     overflow:hidden;
     }
@@ -133,7 +133,7 @@ body {
                     transform: translateY(50px);
                 }
                 50%{
-                    transform: translateY(-50px);
+                    transform: translateY(-100px);
                 }
                  100%{
                     transform: translateY(0);
@@ -142,7 +142,6 @@ body {
 
 .profile-img {
     position: absolute;
-    
     left:30px;
     width: 390px;
     height: 390px;
@@ -154,7 +153,7 @@ body {
     
     }
 .profile-img:hover{
-    transform:translateY(-50px) ;
+    transform:translate(-50px) ;
     
 
 }
@@ -395,4 +394,26 @@ div.contact-icons-alignment{
     border-radius: 10px;
     color:#B026FF;
     padding:10px 10px 50px 10px;
+}
+.bi-file-earmark-person{
+    font-size: 20px;
+     color:azure;
+     font-size: 50px;
+     transition: all 0.6 ease-in-out;
+}
+#resume:hover{
+     border:2px solid#AAFF00;
+    border-radius:16px; 
+    box-shadow: 0 0 30px #AAFF00,
+                0 0 20px  #AAFF00;
+    text-shadow:0 0 8px#AAFF00;
+    border-radius: 10px;
+    color:#AAFF00
+;
+}
+.bi-file-earmark-person:hover{
+       text-shadow:0 0 8px #AAFF00;
+    border-radius: 10px;
+    color:#AAFF00;
+    padding:10px 10px 50px 10px; 
 }
