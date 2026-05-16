@@ -13,18 +13,7 @@
                 
             }
             @keyframes scroll {
-                0%{
-                    height:1px;
-                    width:1px;
-                }
-                50%{
-                    height:8px;
-                    width:80px;
-                }
-                 100%{
-                    height:1px;
-                    width:1px;
-                }
+                
                 
             }
         </style>
@@ -35,3 +24,17 @@
         </div>
     </body>
 </html>
+/* First, import the font from Google Fonts (or similar) at the top of your CSS file */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&display=swap');
+
+/* Apply these styles to your contact heading */
+h1.contact-heading {
+  font-family: 'Montserrat', sans-serif; /* Recommended clean, bold sans-serif */
+  font-weight: 700; /* Use 700 (Bold) or 900 (Extra-Bold) to match the punch */
+  text-transform: uppercase; /* Converts text to all caps, as in the design */
+  font-size: 64px; /* Adjust size to fit your layout; ~64px matches the design */
+  letter-spacing: 0.05em; /* Crucial for that spacious, high-end feel */
+  text-align: center; /* Centers the text across the grid background */
+  color: #333333; /* Use a dark, slightly softer gray than pure black for balance */
+  margin: 60px 0; /* Add top and bottom spacing to separate it from other content */
+}
