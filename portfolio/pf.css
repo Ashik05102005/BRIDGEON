@@ -129,14 +129,17 @@ body {
     overflow:hidden;
     }
 @keyframes blue {
-    0%{
+            0%{
                     transform: translateY(50px);
                 }
-                50%{
-                    transform: translateY(-100px);
+                33%{
+                    transform: translateY(0px);
                 }
-                 100%{
-                    transform: translateY(0);
+                 66%{
+                    transform: translateY(-50px);
+                }
+                100%{
+                    transform: translateY(0px);   
                 }
 }
 

@@ -21,4 +21,4 @@ function vowels(word){
     console.log(count);
     console.log(vow_array);
 }
-vowels("anunandha");
+vowels("education");
