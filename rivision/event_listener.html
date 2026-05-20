@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn">blaa</button>
+    <p id="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit
+        . At quia ipsum nisi perferendis, nihil, ratione cupiditate fugit 
+        modi voluptatum aut inventore, dignissimos accusamus amet! Non 
+        quaerat earum delectus quam ipsum.</p>
+    <input id="name" type="text" placeholder="enter name">
+    <script>
+        let btn=document.getElementById('btn');
+        let p=document.getElementById("para");
+        let input = document.getElementById("name");
+        let bg=document.getElementsByTagName("body")[0];
+        let color,colors=["red","green","blue","grey","orange","white","yellow"];
+        let i=0;
+        btn.addEventListener("click",()=>{
+        p.innerHTML="hello world";
+        color=input.value;
+        input.value=""
+        i++;
+        if(i==colors.length){
+            i=0;
+        }
+        bg.style.backgroundColor=colors[i];
+        })
+        btn.addEventListener("mouseover",()=>{
+            p.style.backgroundColor="orange";
+            
+        })
+        btn.addEventListener("mouseout",()=>{
+            p.style.backgroundColor=color;
+        })
+        
+
+        // Input change
+        input.addEventListener("input", () => {
+        input.style.color="red";
+        console.log("typing.....");
+        });
+
+    </script>
+</body>
+</html>
