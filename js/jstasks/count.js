@@ -10,6 +10,9 @@ for(let i=0; i<word.length;i++){
         freq[ch]=1;
     }
 }console.log(freq);
+freq.a=5
+freq.h=5;
+console.log(freq);
 
 
 

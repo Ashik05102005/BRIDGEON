@@ -2,26 +2,40 @@ let star="*";
 let str=""
 let i,j,n=10,k;
 
-    for(j=1;j<=(n/2+1);j++)
-    {
-        str+=star;
-        console.log(str);
+    for(j=(n/2);j>=0;j--)
+    {   k=j;
+        str="";
 
-    }
-    str="";
-     for(i=n/2-1;i>=0;i--)
-    {   
-        k=i;
-        while(k>=0){
-            str+=star;
+        while(k>0){
+            str+="."
             k--;
         }
-        console.log(str);
-        str="";
-        
-        
+        str+="*";
+        if(j!==0){
+            console.log(str); 
         }
-        
+        else{
+            console.log(str)
+            break;
+        }
+
+            
+    }
+    str="";
+    for(j=0;j<=(n/2);j++)
+    {   k=j;
+        while(k<=j){
+            if(j==0 && k==0){
+                str+="*";
+            }
+            else{}
+            str+="."
+            k++;
+        }
+    
+        console.log(str);
+    }
+    
 
     
     
