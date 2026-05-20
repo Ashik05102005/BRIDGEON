@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Event Listener Example</title>
+</head>
+<body>
+  <button id="btn">Click Me</button>
+  <p id="output"></p>
+  <button id="new-btn">Touch it</button>
+
+  <script>
+    // Get the button element
+    let button = document.getElementById("btn");
+    let size=16;
+    // Attach a click event listener
+    button.addEventListener("click", function() {
+      let para=document.getElementById("output");
+      para.innerText = "Button was clicked!";
+      size+=2;
+      para.style.backgroundColor="red";
+      para.style.fontSize=size+"px";
+      
+    
+
+    });
+    let nb=document.getElementById("new-btn");
+    nb.addEventListener("click",function(){
+        alert("rdyyyyyyyyyyyyyyyyy")
+    })
+  </script>
+</body>
+</html>
