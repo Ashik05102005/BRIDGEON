@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            border-radius: 5px;
+        }
+        #container{
+            display:flex;
+            flex-direction: column;
+            padding:10px;
+            border:2px solid black;
+            background-color: black;
+
+
+        }
+        #display{
+            width:100%;
+            height:100px;
+            border:1px solid black;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            background-color: grey;
+            
+        }
+        #buttuns{
+            display:grid;
+            grid-template-columns: auto auto auto;
+            gap:10px;
+            
+        }
+        .btn{
+            height: 50px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="display">
+            <p id="calc_display"></p>
+        </div>
+        <div id="buttuns">
+           <button class="btn" id="1">1</button>
+           <button class="btn" id="2">2</button>
+           <button class="btn" id="3">3</button>
+           <button class="btn" id="4">4</button>
+           <button class="btn" id="5">5</button>
+           <button class="btn" id="6">6</button>
+           <button class="btn" id="7">7</button>
+           <button class="btn" id="8">8</button>
+           <button class="btn" id="9">9</button>
+           <button class="btn" id="add">Add</button>
+           <button class="btn" id="0">0</button>
+           <button class="btn" id="sub">Sub</button>
+           <button class="btn" id="div">Div</button>
+           <button class="btn" id="mul">Mul</button>
+           <button class="btn" id="clear">Clear</button>
+        </div>
+    </div>
+    <script>
+        let one=document.getElementById("1");
+        let two=document.getElementById("2");
+        let three=document.getElementById("3");
+        let four=document.getElementById("4");
+        let five=document.getElementById("5");
+        let six=document.getElementById("6");
+        let seven=document.getElementById("7");
+        let eight=document.getElementById("8");
+        let nine=document.getElementById("9");
+        let zero=document.getElementById("0");
+        let sub=document.getElementById("sub");
+        let add=document.getElementById("add");
+        let mul=document.getElementById("mul");
+        let div=document.getElementById("div");
+        let clear=document.getElementById("clear");
+        let display=document.getElementById("calc_display")
+        let str="";
+        one.addEventListener("click",()=>{
+            console.log(1);
+            str+="1";
+            display.innerHTML=str;
+            
+        })
+        
+        two.addEventListener("click",()=>{
+            console.log(2);
+            str+="2";
+            display.innerHTML=str;
+        })
+        
+        three.addEventListener("click",()=>{
+            console.log(3);
+            str+="3";
+            display.innerHTML=str;
+        })
+        
+        four.addEventListener("click",()=>{
+            console.log(4);
+            str+="4";
+            display.innerHTML=str;
+        })
+        
+        five.addEventListener("click",()=>{
+            console.log(5);
+            str+="5";
+            display.innerHTML=str;
+        })
+        
+        six.addEventListener("click",()=>{
+            console.log(6);
+            str+="6";
+            display.innerHTML=str;
+        })
+        
+        seven.addEventListener("click",()=>{
+            console.log(7);
+            str+="7";
+            display.innerHTML=str;
+        })
+        
+        eight.addEventListener("click",()=>{
+            console.log(8);
+            str+="8";
+            display.innerHTML=str;
+        })
+        
+        nine.addEventListener("click",()=>{
+            console.log(9);
+            str+="9";
+            display.innerHTML=str;
+        })
+        
+        zero.addEventListener("click",()=>{
+            console.log(0);
+            str+="0";
+            display.innerHTML=str;
+        })
+        
+        add.addEventListener("click",()=>{
+            console.log("add");
+            str+=" + ";
+            display.innerHTML=str;
+        })
+        
+        sub.addEventListener("click",()=>{
+            console.log("sub");
+            str+=" - ";
+            display.innerHTML=str;
+        })
+        
+        div.addEventListener("click",()=>{
+            console.log("div");
+            str+=" / ";
+            display.innerHTML=str;
+        })
+       
+        mul.addEventListener("click",()=>{
+            console.log("mul");
+            str+=" - ";
+            display.innerHTML=str;
+        })
+       
+        clear.addEventListener("click",()=>{
+            console.log("clear");
+            str="";
+            display.innerHTML=str;
+
+        })
+    </script>
+</body>
+</html>

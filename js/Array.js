@@ -7,4 +7,4 @@ console.log(array);
 let push=array.unshift(10);
 console.log(push , array);
 sli=array.slice(1,4)
-console.log(sli , array);fff
+console.log(sli , array);
